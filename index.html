@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f1f2ee">
+<meta name="theme-color" content="#080d16">
 <meta name="description" content="HAO PENG — Graphics Engineering, Real-time Rendering, Unreal Engine, Shader Development and Technical Art Portfolio.">
 <meta name="keywords" content="Graphics Programming, OpenGL, GLSL, DirectX, HLSL, Unreal Engine, Unity, PBR, Ray Tracing, Technical Art, Rendering">
 <title>HAO PENG — GRAPHICS / RENDERING LAB</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261031-portfolio2">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="config.js"></script>
 </head>
@@ -18,30 +18,18 @@
 <div class="shell">
 <header class="topbar">
   <a class="brand" href="#top">HP<span>_</span>RENDERLAB</a>
-  <nav>
-    <a href="#work">PROJECTS</a><a href="#stack">TECH STACK</a><a href="#frontier">FRONTIER</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
-  </nav>
+  <nav><a href="#work">PROJECTS</a><a href="#stack">TECH STACK</a><a href="#frontier">FRONTIER</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
   <span class="top-meta">GRAPHICS ENGINEERING / 2026</span>
 </header>
-
 <main id="top">
 <section class="hero">
  <div class="hero-copy">
   <div class="eyebrow">GRAPHICS PROGRAMMING · REAL-TIME RENDERING · TECHNICAL ART</div>
   <h1>让代码理解光，<br><em>让画面拥有真实。</em></h1>
   <p>你好，我是汪昊鹏，一名软件工程专业学生，专注于图形开发、实时渲染与 Rendering Technical Art。我的兴趣位于程序、数学与视觉表达的交汇处：从渲染管线和着色器出发，探索材质、光照、引擎架构与最终画面之间的联系。</p>
-  <div class="actions">
-    <a class="btn primary" href="#work">查看项目档案 ↗</a>
-    <a class="btn" href="#about">认识我</a>
-  </div>
-  <div class="stats">
-    <div><b>GL / DX</b><small>GRAPHICS API</small></div>
-    <div><b>UE / UNITY</b><small>REAL-TIME ENGINE</small></div>
-    <div><b>RENDERING</b><small>FOCUS AREA</small></div>
-  </div>
-  <div class="tech-ribbon" aria-label="技术方向">
-    <span>C++</span><span>OPENGL</span><span>GLSL</span><span>DIRECTX</span><span>HLSL</span><span>UNREAL ENGINE</span><span>RAY TRACING</span>
-  </div>
+  <div class="actions"><a class="btn primary" href="#work">查看项目档案 ↗</a><a class="btn" href="#about">认识我</a></div>
+  <div class="stats"><div><b>GL / DX</b><small>GRAPHICS API</small></div><div><b>UE / UNITY</b><small>REAL-TIME ENGINE</small></div><div><b>RENDERING</b><small>FOCUS AREA</small></div></div>
+  <div class="tech-ribbon"><span>C++</span><span>OPENGL</span><span>GLSL</span><span>DIRECTX</span><span>HLSL</span><span>UNREAL ENGINE</span><span>RAY TRACING</span></div>
  </div>
  <div class="visual">
   <div class="hud top">RENDER_CORE<br><span>● ONLINE / LEARNING</span><br>DX12 · HLSL · OPENGL</div>
@@ -52,22 +40,14 @@
 </section>
 
 <section class="section" id="work">
- <div class="section-head">
-  <div><div class="eyebrow">01 / SELECTED WORK</div><h2>项目作品</h2></div>
-  <p>以真实完成的项目为核心，持续记录技术实现、视觉目标、性能思考与迭代过程。每个项目都尽量做到可运行、可拆解、可复现。</p>
- </div>
- <div class="filters">
-  <input id="search" type="search" placeholder="搜索项目 / 技术关键词">
-  <select id="statusFilter"><option value="">全部状态</option><option>COMPLETED</option><option>IN PROGRESS</option><option>PLANNED</option></select>
- </div>
+ <div class="section-head"><div><div class="eyebrow">01 / SELECTED WORK</div><h2>项目作品</h2></div>
+ <p>以真实完成的项目为核心，持续记录技术实现、视觉目标、性能思考与迭代过程。每个项目都尽量做到可运行、可拆解、可复现。</p></div>
+ <div class="filters"><input id="search" type="search" placeholder="搜索项目 / 技术关键词"><select id="statusFilter"><option value="">全部状态</option><option>COMPLETED</option><option>IN PROGRESS</option><option>PLANNED</option></select></div>
  <div id="projects" class="project-grid"><div class="loading">正在加载项目档案…</div></div>
 </section>
 
 <section class="section" id="stack">
- <div class="section-head">
-  <div><div class="eyebrow">02 / TECHNICAL TOOLKIT</div><h2>技术栈与能力结构</h2></div>
-  <p>围绕图形 API、着色器、实时引擎和内容生产管线组织能力，而不是简单罗列软件名称。</p>
- </div>
+ <div class="section-head"><div><div class="eyebrow">02 / TECHNICAL TOOLKIT</div><h2>技术栈与能力结构</h2></div><p>围绕图形 API、着色器、实时引擎和内容生产管线组织能力，而不是简单罗列软件名称。</p></div>
  <div class="stack-grid">
   <article><b>01 / GRAPHICS API</b><h3>图形底层与编程</h3><p>C++ · OpenGL · GLSL<br>计算机图形学 · GPU 渲染流程<br>DirectX / DX12 · 持续学习</p></article>
   <article><b>02 / GAME ENGINE</b><h3>引擎与实时表现</h3><p>Unreal Engine · Unity<br>UE / Unity 实时场景与项目实践<br>Render Pipeline · Engine Workflow</p></article>
@@ -78,10 +58,7 @@
 </section>
 
 <section class="section frontier" id="frontier">
- <div class="section-head">
-  <div><div class="eyebrow">03 / RESEARCH FRONTIER</div><h2>前沿渲染探索</h2></div>
-  <p>关注实时图形学的发展方向，把前沿技术拆解为可学习、可验证的小型 Demo，逐步沉淀为自己的技术作品。</p>
- </div>
+ <div class="section-head"><div><div class="eyebrow">03 / RESEARCH FRONTIER</div><h2>前沿渲染探索</h2></div><p>关注实时图形学的发展方向，把前沿技术拆解为可学习、可验证的小型 Demo，逐步沉淀为自己的技术作品。</p></div>
  <div class="frontier-grid">
   <article><span>01 / LIGHT TRANSPORT</span><h3>Ray Tracing</h3><p>光线追踪、加速结构、反射与阴影，理解光线与场景几何的交互。</p></article>
   <article><span>02 / GLOBAL ILLUMINATION</span><h3>Path Tracing</h3><p>路径追踪、间接光照与采样降噪，探索更完整的光传输模拟。</p></article>
@@ -93,48 +70,52 @@
 
 <section class="section about" id="about">
  <div class="section-head"><div><div class="eyebrow">04 / ABOUT THE DEVELOPER</div><h2>关于我</h2></div></div>
- <div class="about-grid">
-  <div class="monogram">H<br>P.</div>
-  <div class="about-copy">
-   <p>我目前就读于<strong>中国石油大学（华东）软件工程专业</strong>。相比只把引擎当作内容制作工具，我更希望理解画面背后的技术机制：顶点如何经过渲染管线，Shader 如何影响材质表现，光照如何塑造空间，以及 GPU 如何高效地完成这些计算。</p>
-   <p>我的学习路径以<strong>C++、计算机图形学与 OpenGL</strong>为基础，并逐步向 <strong>GLSL / HLSL、DirectX、Unreal Engine 与 Unity</strong> 延伸。我有 Unreal Engine 项目制作经历，也在持续积累场景制作、基础建模、材质和灯光方面的能力，希望把工程思维与视觉判断结合起来。</p>
-   <p>长期希望成长为兼具<strong>图形编程能力、渲染技术理解和美术沟通能力</strong>的 Graphics / Rendering TA。对我而言，好的作品不只是效果截图，还应该能解释技术原理、展示实现过程，并通过代码或 Demo 证明它确实能够运行。</p>
-   <div class="road">
-    <div><b>FOUNDATION</b>　C++ · OpenGL · GLSL · 计算机图形学</div>
-    <div><b>ENGINEERING</b>　Unreal Engine · Unity · Shader · PBR · 渲染管线</div>
-    <div><b>EXPLORE</b>　DirectX 12 · HLSL · Ray Tracing · Path Tracing</div>
-    <div><b>GOAL</b>　构建可展示、可复现、可持续迭代的图形 / Rendering TA 作品集</div>
-   </div>
-  </div>
- </div>
+ <div class="about-grid"><div class="monogram">H<br>P.</div><div class="about-copy">
+  <p>我目前就读于<strong>中国石油大学（华东）软件工程专业</strong>。相比只把引擎当作内容制作工具，我更希望理解画面背后的技术机制：顶点如何经过渲染管线，Shader 如何影响材质表现，光照如何塑造空间，以及 GPU 如何高效地完成这些计算。</p>
+  <p>我的学习路径以<strong>C++、计算机图形学与 OpenGL</strong>为基础，并逐步向 <strong>GLSL / HLSL、DirectX、Unreal Engine 与 Unity</strong> 延伸。我有 Unreal Engine 项目制作经历，也在持续积累场景制作、基础建模、材质和灯光方面的能力，希望把工程思维与视觉判断结合起来。</p>
+  <p>长期希望成长为兼具<strong>图形编程能力、渲染技术理解和美术沟通能力</strong>的 Graphics / Rendering TA。对我而言，好的作品不只是效果截图，还应该能解释技术原理、展示实现过程，并通过代码或 Demo 证明它确实能够运行。</p>
+  <div class="road"><div><b>FOUNDATION</b>　C++ · OpenGL · GLSL · 计算机图形学</div><div><b>ENGINEERING</b>　Unreal Engine · Unity · Shader · PBR · 渲染管线</div><div><b>EXPLORE</b>　DirectX 12 · HLSL · Ray Tracing · Path Tracing</div><div><b>GOAL</b>　构建可展示、可复现、可持续迭代的图形 / Rendering TA 作品集</div></div>
+ </div></div>
 </section>
-
-<section class="section" id="contact">
- <div class="contact">
-  <div><div class="eyebrow">05 / CONTACT</div><h2>Build the image. Understand the light.</h2><p>欢迎交流图形开发、实时渲染、Unreal Engine、Shader 与技术美术。</p></div>
-  <a class="btn primary" href="mailto:your-email@example.com">CONTACT ↗</a>
- </div>
-</section>
+<section class="section" id="contact"><div class="contact"><div><div class="eyebrow">05 / CONTACT</div><h2>Build the image. Understand the light.</h2><p>欢迎交流图形开发、实时渲染、Unreal Engine、Shader 与技术美术。</p></div><a class="btn primary" href="mailto:your-email@example.com">CONTACT ↗</a></div></section>
 </main>
-
-<footer>
- <span>© 2026 HAO PENG / GRAPHICS & RENDERING</span>
- <button id="adminEntry" class="admin-entry">ADMIN ACCESS</button>
- <span>BUILT TO EVOLVE.</span>
-</footer>
+<footer><span>© 2026 HAO PENG / GRAPHICS & RENDERING</span><button id="adminEntry" class="admin-entry">ADMIN ACCESS</button><span>BUILT TO EVOLVE.</span></footer>
 </div>
 
-<div id="projectDialog" class="overlay"><div class="dialog wide"><button class="x" data-close="projectDialog">×</button><div id="detailContent"></div></div></div>
+<!-- Public project detail -->
+<div id="projectDialog" class="overlay"><div class="dialog wide detail-dialog"><button class="x" data-close="projectDialog" aria-label="关闭">×</button><div id="detailContent"></div></div></div>
+<!-- Admin login -->
 <div id="authDialog" class="overlay"><div class="dialog auth"><button class="x" data-close="authDialog">×</button><div class="eyebrow">PRIVATE ADMIN AREA</div><h2>管理员登录</h2><p class="muted">仅授权管理员账号可以管理作品集内容。</p><label>邮箱<input id="loginEmail" type="email" autocomplete="username" placeholder="管理员邮箱"></label><label>密码<input id="loginPassword" type="password" autocomplete="current-password" placeholder="账号密码"></label><button id="loginBtn" class="btn primary full">登录管理后台</button><p id="authMessage" class="message"></p></div></div>
-<div id="adminPanel" class="admin-panel"><div class="admin-head"><div><div class="eyebrow">AUTHENTICATED / PRIVATE</div><b>作品集管理后台</b><small id="adminIdentity"></small></div><div><button id="newProject" class="btn primary">＋ 添加项目</button><button id="logoutBtn" class="btn">退出登录</button></div></div><div class="admin-note">只有配置的管理员账号可以写入数据库。公开访客没有新增、编辑或删除权限。</div><div id="adminProjects" class="admin-list"></div></div>
-<div id="editDialog" class="overlay"><div class="dialog edit"><button class="x" data-close="editDialog">×</button><div class="eyebrow">PROJECT EDITOR</div><h2 id="editHeading">添加项目</h2><div class="form-grid">
-<label>项目编号<input id="fNum" placeholder="01 / OPENGL"></label><label>状态<select id="fStatus"><option>COMPLETED</option><option>IN PROGRESS</option><option>PLANNED</option></select></label>
-<label class="span">项目名称<input id="fTitle" required placeholder="OpenGL 光剑模型实时渲染"></label>
-<label class="span">项目简介<textarea id="fDesc" rows="4" placeholder="项目目标、实现内容与技术亮点"></textarea></label>
-<label class="span">技术标签（逗号分隔）<input id="fTags" placeholder="OpenGL, C++, GLSL"></label>
-<label>项目详情 / Demo 链接<input id="fLink" type="url" placeholder="https://..."></label><label>GitHub 链接<input id="fGithub" type="url" placeholder="https://github.com/..."></label>
-<label class="span">项目封面 / 截图<input id="fImage" type="file" accept="image/png,image/jpeg,image/webp"><small id="imageHint">选择图片上传到作品集媒体库；留空则保留原图。</small></label>
-</div><div class="dialog-actions"><button class="btn" data-close="editDialog">取消</button><button id="saveProject" class="btn primary">保存项目</button></div><p id="saveMessage" class="message"></p></div></div>
-<script src="app.js?v=20261031-3"></script>
-</body>
-</html>
+<!-- Admin panel -->
+<div id="adminPanel" class="admin-panel"><div class="admin-head"><div><div class="eyebrow">AUTHENTICATED / PRIVATE</div><b>作品集管理后台</b><small id="adminIdentity"></small></div><div class="admin-head-actions"><button id="newProject" class="btn primary">＋ 添加项目</button><button id="logoutBtn" class="btn">退出登录</button></div></div><div class="admin-note">支持项目总述、B 站视频、MP4 上传、多图画廊、富文本技术文章和 GitHub 链接。公开访客没有写入权限。</div><div id="adminProjects" class="admin-list"></div></div>
+<!-- Project editor -->
+<div id="editDialog" class="overlay"><div class="dialog edit edit-dialog"><button class="x" data-close="editDialog">×</button><div class="eyebrow">PROJECT EDITOR / CONTENT STUDIO</div><h2 id="editHeading">添加项目</h2>
+ <div class="form-grid">
+  <label>项目编号<input id="fNum" placeholder="01 / OPENGL"></label><label>状态<select id="fStatus"><option>COMPLETED</option><option>IN PROGRESS</option><option>PLANNED</option></select></label>
+  <label class="span">项目名称<input id="fTitle" required placeholder="OpenGL 光剑模型实时渲染"></label>
+  <label class="span">卡片简介<textarea id="fDesc" rows="2" placeholder="在项目卡片中显示的简短介绍"></textarea></label>
+  <label class="span">项目总述<textarea id="fOverview" rows="4" placeholder="项目背景、目标、完成内容和最终成果……"></textarea></label>
+  <label class="span">技术标签（逗号分隔）<input id="fTags" placeholder="OpenGL, C++, GLSL, PBR"></label>
+  <label>项目 Demo 链接<input id="fLink" type="url" placeholder="https://..."></label><label>GitHub 仓库链接<input id="fGithub" type="url" placeholder="https://github.com/..."></label>
+  <label class="span">项目封面<input id="fImage" type="file" accept="image/png,image/jpeg,image/webp"><small id="imageHint">建议上传 16:9 高清封面图。</small></label>
+  <div class="span editor-divider">视频演示</div>
+  <label>视频来源<select id="fVideoType"><option value="none">暂不添加视频</option><option value="bilibili">B 站视频链接</option><option value="mp4">上传 MP4 文件</option></select></label>
+  <label id="videoUrlWrap">B 站视频链接<input id="fVideoUrl" type="url" placeholder="https://www.bilibili.com/video/BV..."></label>
+  <label class="span" id="videoFileWrap">MP4 视频文件<input id="fVideoFile" type="file" accept="video/mp4,video/webm"><small id="videoHint">建议压缩到 100MB 以内；具体限制取决于 Supabase Storage 配置。</small></label>
+  <div class="span editor-divider">图片画廊</div>
+  <label class="span">追加图片（可多选）<input id="fGallery" type="file" accept="image/png,image/jpeg,image/webp" multiple><small id="galleryHint">可以一次选择多张图片。保存后会追加到当前项目画廊。</small></label>
+  <div class="span" id="existingGallery"></div>
+  <div class="span editor-divider">技术原理 / 项目文章</div>
+  <div class="span rich-toolbar" role="toolbar" aria-label="文章格式工具栏">
+   <button type="button" data-command="formatBlock" data-value="h2">H2</button><button type="button" data-command="formatBlock" data-value="h3">H3</button><button type="button" data-command="bold"><b>B</b></button><button type="button" data-command="italic"><i>I</i></button><button type="button" data-command="underline"><u>U</u></button><button type="button" data-command="insertUnorderedList">• 列表</button><button type="button" data-command="formatBlock" data-value="pre">代码块</button><button type="button" id="clearFormat">清除格式</button>
+   <label class="toolbar-control">字号<select id="editorFontSize"><option value="3">正文</option><option value="2">较小</option><option value="4">大字</option><option value="5">标题</option><option value="6">大标题</option></select></label>
+   <label class="toolbar-control">文字颜色<input id="editorColor" type="color" value="#243247"></label>
+  </div>
+  <div id="fContent" class="rich-editor" contenteditable="true" data-placeholder="在这里撰写项目技术原理、实现步骤、关键算法、性能优化和项目总结。可设置标题、加粗、字号、颜色、列表和代码块。"></div>
+  <small class="span editor-help">提示：编辑器支持基础富文本。请避免粘贴不可信 HTML；保存时会过滤脚本、事件属性和危险链接。</small>
+ </div>
+ <div class="dialog-actions"><button class="btn" data-close="editDialog">取消</button><button id="saveProject" class="btn primary">保存项目</button></div><p id="saveMessage" class="message"></p>
+</div></div>
+<div id="lightbox" class="lightbox" aria-label="图片预览"><button id="lightboxClose" type="button" aria-label="关闭图片预览">×</button><img id="lightboxImage" alt="项目图片预览"></div>
+<script src="app.js?v=20261031-portfolio2"></script>
+</body></html>
