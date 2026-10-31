@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://pengfeiyouxi.github.io/peng_Renderlab/sitemap.xml
