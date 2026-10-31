@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080d16">
-<meta name="description" content="HAO PENG — Graphics Development / Rendering Technical Art Portfolio">
-
-<meta name="msvalidate.01" content="D483A5C2637161337031AFF9A2DECB7F" />
- 
-<title>HAO PENG — RENDER / LAB</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f1f2ee">
+<meta name="description" content="HAO PENG — Graphics Engineering, Real-time Rendering, Unreal Engine, Shader Development and Technical Art Portfolio.">
+<meta name="keywords" content="Graphics Programming, OpenGL, GLSL, DirectX, HLSL, Unreal Engine, Unity, PBR, Ray Tracing, Technical Art, Rendering">
+<title>HAO PENG — GRAPHICS / RENDERING LAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -16,27 +16,112 @@
 </head>
 <body>
 <div class="shell">
-<header class="topbar"><a class="brand" href="#top">HP<span>_</span>RENDERLAB</a><nav><a href="#work">PROJECTS</a><a href="#stack">TOOLKIT</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav><span class="top-meta">GRAPHICS / 2026</span></header>
+<header class="topbar">
+  <a class="brand" href="#top">HP<span>_</span>RENDERLAB</a>
+  <nav>
+    <a href="#work">PROJECTS</a><a href="#stack">TECH STACK</a><a href="#frontier">FRONTIER</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+  </nav>
+  <span class="top-meta">GRAPHICS ENGINEERING / 2026</span>
+</header>
+
 <main id="top">
 <section class="hero">
- <div class="hero-copy"><div class="eyebrow">GRAPHICS DEVELOPMENT · REAL-TIME RENDERING · TECHNICAL ART</div>
- <h1>把代码写进<br><em>实时画面。</em></h1>
- <p>你好，我是汪昊鹏，一名软件工程专业学生，方向聚焦图形开发 / 渲染 TA。我的兴趣在程序与视觉的交界处：理解渲染管线，也关心材质、灯光与最终画面表现。</p>
- <div class="actions"><a class="btn primary" href="#work">探索项目 ↗</a><a class="btn" href="#about">关于我</a></div>
- <div class="stats"><div><b id="projectCount">01</b><small>PROJECTS</small></div><div><b>GL / TA</b><small>FOCUS AREA</small></div><div><b>BUILD</b><small>IN PUBLIC</small></div></div></div>
- <div class="visual"><div class="hud top">RENDER_CORE<br><span>● ONLINE</span><br>API / OPENGL</div><div class="orbit"></div><div class="orbit orbit-two"></div><div class="cross"></div><div class="core"></div><div class="beam"></div><div class="hud bottom">C++ · GLSL · REALTIME<br>FRAME / 001</div></div>
+ <div class="hero-copy">
+  <div class="eyebrow">GRAPHICS PROGRAMMING · REAL-TIME RENDERING · TECHNICAL ART</div>
+  <h1>让代码理解光，<br><em>让画面拥有真实。</em></h1>
+  <p>你好，我是汪昊鹏，一名软件工程专业学生，专注于图形开发、实时渲染与 Rendering Technical Art。我的兴趣位于程序、数学与视觉表达的交汇处：从渲染管线和着色器出发，探索材质、光照、引擎架构与最终画面之间的联系。</p>
+  <div class="actions">
+    <a class="btn primary" href="#work">查看项目档案 ↗</a>
+    <a class="btn" href="#about">认识我</a>
+  </div>
+  <div class="stats">
+    <div><b>GL / DX</b><small>GRAPHICS API</small></div>
+    <div><b>UE / UNITY</b><small>REAL-TIME ENGINE</small></div>
+    <div><b>RENDERING</b><small>FOCUS AREA</small></div>
+  </div>
+  <div class="tech-ribbon" aria-label="技术方向">
+    <span>C++</span><span>OPENGL</span><span>GLSL</span><span>DIRECTX</span><span>HLSL</span><span>UNREAL ENGINE</span><span>RAY TRACING</span>
+  </div>
+ </div>
+ <div class="visual">
+  <div class="hud top">RENDER_CORE<br><span>● ONLINE / LEARNING</span><br>DX12 · HLSL · OPENGL</div>
+  <div class="orbit"></div><div class="orbit orbit-two"></div><div class="cross"></div><div class="core"></div><div class="beam"></div>
+  <div class="visual-label"><b>LIGHT TRANSPORT</b><span>RASTERIZATION → RAY TRACING</span><span>SHADING · MATERIAL · ILLUMINATION</span></div>
+  <div class="hud bottom">C++ · GLSL · HLSL<br>REAL-TIME / 001</div>
+ </div>
 </section>
-<section class="section" id="work"><div class="section-head"><div><div class="eyebrow">01 / SELECTED WORK</div><h2>项目作品</h2></div><p>以真实完成的项目为主角。项目档案持续扩充，记录技术实现、视觉目标与迭代过程。</p></div>
-<div class="filters"><input id="search" type="search" placeholder="搜索项目 / 技术关键词"><select id="statusFilter"><option value="">全部状态</option><option>COMPLETED</option><option>IN PROGRESS</option><option>PLANNED</option></select></div>
-<div id="projects" class="project-grid"><div class="loading">正在加载项目档案…</div></div>
+
+<section class="section" id="work">
+ <div class="section-head">
+  <div><div class="eyebrow">01 / SELECTED WORK</div><h2>项目作品</h2></div>
+  <p>以真实完成的项目为核心，持续记录技术实现、视觉目标、性能思考与迭代过程。每个项目都尽量做到可运行、可拆解、可复现。</p>
+ </div>
+ <div class="filters">
+  <input id="search" type="search" placeholder="搜索项目 / 技术关键词">
+  <select id="statusFilter"><option value="">全部状态</option><option>COMPLETED</option><option>IN PROGRESS</option><option>PLANNED</option></select>
+ </div>
+ <div id="projects" class="project-grid"><div class="loading">正在加载项目档案…</div></div>
 </section>
-<section class="section" id="stack"><div class="section-head"><div><div class="eyebrow">02 / TOOLKIT</div><h2>技术栈</h2></div><p>按图形开发与技术美术的交叉能力组织，而不是简单罗列软件名称。</p></div>
-<div class="stack-grid"><article><b>GRAPHICS</b><h3>图形开发</h3><p>OpenGL · GLSL · C++<br>计算机图形学 · 实时渲染</p></article><article><b>ENGINE</b><h3>引擎与实时表现</h3><p>Unity · C# · Unreal Engine<br>Shader · Render Pipeline</p></article><article><b>ART PIPELINE</b><h3>美术与内容制作</h3><p>基础建模 · 场景 / 地编<br>材质 · 灯光 · 视觉表达</p></article><article><b>WORKFLOW</b><h3>工程实践</h3><p>Git · Debugging · Profiling<br>工具开发 · 技术文档</p></article></div>
+
+<section class="section" id="stack">
+ <div class="section-head">
+  <div><div class="eyebrow">02 / TECHNICAL TOOLKIT</div><h2>技术栈与能力结构</h2></div>
+  <p>围绕图形 API、着色器、实时引擎和内容生产管线组织能力，而不是简单罗列软件名称。</p>
+ </div>
+ <div class="stack-grid">
+  <article><b>01 / GRAPHICS API</b><h3>图形底层与编程</h3><p>C++ · OpenGL · GLSL<br>计算机图形学 · GPU 渲染流程<br>DirectX / DX12 · 持续学习</p></article>
+  <article><b>02 / GAME ENGINE</b><h3>引擎与实时表现</h3><p>Unreal Engine · Unity<br>UE / Unity 实时场景与项目实践<br>Render Pipeline · Engine Workflow</p></article>
+  <article><b>03 / SHADER</b><h3>着色器与材质</h3><p>GLSL · HLSL · Shader<br>PBR · 材质表达 · 光照模型<br>GPU 编程与效果实现</p></article>
+  <article><b>04 / ART PIPELINE</b><h3>技术美术与内容制作</h3><p>基础建模 · 场景 / 地编<br>材质 · 灯光 · 资源规范<br>程序与美术协作</p></article>
+  <article><b>05 / WORKFLOW</b><h3>工程实践</h3><p>Git · Debugging · Profiling<br>工具开发 · 性能分析<br>技术文档与项目复盘</p></article>
+ </div>
 </section>
-<section class="section about" id="about"><div class="section-head"><div><div class="eyebrow">03 / ABOUT</div><h2>关于我</h2></div></div><div class="about-grid"><div class="monogram">H<br>P.</div><div><p>我目前就读于<strong>中国石油大学（华东）软件工程专业</strong>。我希望自己的作品集不是“会几个软件”的列表，而是一条清晰的成长路线：从 <strong>OpenGL / 图形学底层理解</strong>出发，逐渐延伸到 Shader、实时渲染与引擎中的 Technical Art。</p><p>长期目标是成为兼具<strong>程序能力、渲染理解和美术感知</strong>的图形开发 / Rendering TA，并用可以运行、可以拆解、可以讲清楚的项目证明能力。</p><div class="road"><div><b>NOW</b>　完善 OpenGL 光剑渲染项目与图形学基础</div><div><b>NEXT</b>　PBR / IBL / 后处理 / Shader 独立 Demo</div><div><b>GOAL</b>　形成面向游戏行业 TA / 图形方向实习的作品集</div></div></div></div></section>
-<section class="section" id="contact"><div class="contact"><div><div class="eyebrow">04 / CONTACT</div><h2>Code the image.</h2><p>欢迎交流实时渲染、图形开发与技术美术。</p></div><a class="btn primary" href="mailto:your-email@example.com">CONTACT ↗</a></div></section>
+
+<section class="section frontier" id="frontier">
+ <div class="section-head">
+  <div><div class="eyebrow">03 / RESEARCH FRONTIER</div><h2>前沿渲染探索</h2></div>
+  <p>关注实时图形学的发展方向，把前沿技术拆解为可学习、可验证的小型 Demo，逐步沉淀为自己的技术作品。</p>
+ </div>
+ <div class="frontier-grid">
+  <article><span>01 / LIGHT TRANSPORT</span><h3>Ray Tracing</h3><p>光线追踪、加速结构、反射与阴影，理解光线与场景几何的交互。</p></article>
+  <article><span>02 / GLOBAL ILLUMINATION</span><h3>Path Tracing</h3><p>路径追踪、间接光照与采样降噪，探索更完整的光传输模拟。</p></article>
+  <article><span>03 / MATERIAL & LIGHT</span><h3>PBR / IBL</h3><p>基于物理的材质、图像式光照与能量守恒，连接材质参数和最终视觉。</p></article>
+  <article><span>04 / GPU PIPELINE</span><h3>Modern Rendering</h3><p>GPU 驱动渲染、实时全局光照、后处理与渲染性能优化。</p></article>
+ </div>
+ <p class="frontier-note">以上为持续学习与研究方向；具体掌握程度以项目档案和技术复盘为准。</p>
+</section>
+
+<section class="section about" id="about">
+ <div class="section-head"><div><div class="eyebrow">04 / ABOUT THE DEVELOPER</div><h2>关于我</h2></div></div>
+ <div class="about-grid">
+  <div class="monogram">H<br>P.</div>
+  <div class="about-copy">
+   <p>我目前就读于<strong>中国石油大学（华东）软件工程专业</strong>。相比只把引擎当作内容制作工具，我更希望理解画面背后的技术机制：顶点如何经过渲染管线，Shader 如何影响材质表现，光照如何塑造空间，以及 GPU 如何高效地完成这些计算。</p>
+   <p>我的学习路径以<strong>C++、计算机图形学与 OpenGL</strong>为基础，并逐步向 <strong>GLSL / HLSL、DirectX、Unreal Engine 与 Unity</strong> 延伸。我有 Unreal Engine 项目制作经历，也在持续积累场景制作、基础建模、材质和灯光方面的能力，希望把工程思维与视觉判断结合起来。</p>
+   <p>长期希望成长为兼具<strong>图形编程能力、渲染技术理解和美术沟通能力</strong>的 Graphics / Rendering TA。对我而言，好的作品不只是效果截图，还应该能解释技术原理、展示实现过程，并通过代码或 Demo 证明它确实能够运行。</p>
+   <div class="road">
+    <div><b>FOUNDATION</b>　C++ · OpenGL · GLSL · 计算机图形学</div>
+    <div><b>ENGINEERING</b>　Unreal Engine · Unity · Shader · PBR · 渲染管线</div>
+    <div><b>EXPLORE</b>　DirectX 12 · HLSL · Ray Tracing · Path Tracing</div>
+    <div><b>GOAL</b>　构建可展示、可复现、可持续迭代的图形 / Rendering TA 作品集</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="contact">
+ <div class="contact">
+  <div><div class="eyebrow">05 / CONTACT</div><h2>Build the image. Understand the light.</h2><p>欢迎交流图形开发、实时渲染、Unreal Engine、Shader 与技术美术。</p></div>
+  <a class="btn primary" href="mailto:your-email@example.com">CONTACT ↗</a>
+ </div>
+</section>
 </main>
-<footer><span>© 2026 HAO PENG / GRAPHICS & RENDERING TA</span><button id="adminEntry" class="admin-entry">ADMIN ACCESS</button><span>BUILT TO EVOLVE.</span></footer>
+
+<footer>
+ <span>© 2026 HAO PENG / GRAPHICS & RENDERING</span>
+ <button id="adminEntry" class="admin-entry">ADMIN ACCESS</button>
+ <span>BUILT TO EVOLVE.</span>
+</footer>
 </div>
 
 <div id="projectDialog" class="overlay"><div class="dialog wide"><button class="x" data-close="projectDialog">×</button><div id="detailContent"></div></div></div>
@@ -51,4 +136,5 @@
 <label class="span">项目封面 / 截图<input id="fImage" type="file" accept="image/png,image/jpeg,image/webp"><small id="imageHint">选择图片上传到作品集媒体库；留空则保留原图。</small></label>
 </div><div class="dialog-actions"><button class="btn" data-close="editDialog">取消</button><button id="saveProject" class="btn primary">保存项目</button></div><p id="saveMessage" class="message"></p></div></div>
 <script src="app.js"></script>
-</body></html>
+</body>
+</html>
